@@ -1,0 +1,16 @@
+﻿<div ng-controller="MessageDialogController as mdc">
+    <div class="context-block">
+        <div class="icon-block right-buffer">
+            <img src="{{mdc.imgPath}}" class="msg-dialog-img" />
+        </div>
+        <div class="msg-block">
+            <div class="msg-body">{{mdc.msg}}</div>
+        </div>
+    </div>
+    <p class="btn-toolbar">
+        <div class="btn-group top-buffer" role="group">
+            <button type="button" class="btn btn-secondary btn-space" ng-click="mdc.OK()">OK</button>
+            <button type="button" class="btn btn-secondary btn-space" ng-show="{{mdc.isOKCancel()}}" ng-click="mdc.Cancel()">Cancel</button>
+        </div>
+    </p>
+</div>

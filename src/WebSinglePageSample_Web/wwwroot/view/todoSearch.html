@@ -1,0 +1,18 @@
+﻿<div ng-controller="TodoSearchController as tsc">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>編集</th>
+                <th>済み</th>
+                <th>やるべきこと</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="todo in tsc.TodoService.todoList">
+                <td><button type="button" class="btn btn-secondary" ng-click="tsc.showTodoDetail(todo.guid)">編集</button></td>
+                <td><input type="checkbox"disabled="disabled" ng-checked="todo.complete"></td>
+                <td>{{todo.what}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

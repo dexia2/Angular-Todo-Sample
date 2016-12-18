@@ -1,0 +1,26 @@
+﻿
+.form-padding {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.top-buffer {
+  margin-top:20px;
+}
+
+.right-buffer {
+  margin-right:20px;
+}
+
+.btn-space {
+  margin-right: 5px;
+}
+
+.context-block {
+  display: inline-flex;
+}
+
+.msg-dialog-img {
+  width:50px;
+  height:50px;
+}
